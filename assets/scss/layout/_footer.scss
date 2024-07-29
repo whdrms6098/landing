@@ -1,0 +1,48 @@
+#footer {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-dark-gray;
+    position: relative;
+    padding: 0 40px;
+
+    
+    @include mobile650 {
+        height: 35vh;
+        padding: 0 40px 100px;
+    }
+
+    small {
+        font-size: 6vw;
+        font-weight: 600;
+        color: $color-white;
+    }
+
+    .gnb {
+        width: 100%;
+        padding: 0 40px;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+
+
+        .gnb__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include mobile650 {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            li {
+                font-size: 14px;
+                font-weight: 400;
+                color: $color-white;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

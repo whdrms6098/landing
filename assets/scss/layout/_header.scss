@@ -1,0 +1,38 @@
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transition: opacity .3s;
+    opacity: 0;
+    visibility: hidden;
+    mix-blend-mode: difference;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @include tablet{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .gnb {
+        padding: 20px 20px 0;
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                font-size: 15px;
+                font-weight: 400;
+                color: $color-white;
+                cursor: pointer;
+            }
+        }
+    }
+}

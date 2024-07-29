@@ -1,0 +1,22 @@
+@mixin pc1200(){
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tablet(){
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+@mixin mobile(){
+    @media (max-width: 850px) {
+        @content;
+    }
+}
+
+@mixin mobile650(){
+    @media (max-width: 650px) {
+        @content;
+    }
+}

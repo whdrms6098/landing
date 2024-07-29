@@ -1,0 +1,47 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.sticky {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+body {
+  transition: background-color .4s;
+}
+
+body.white {
+  background-color: $color-dark-white;
+
+  .works__title {
+    background-color: $color-dark-white;
+  }
+
+  .works__info {
+
+    &-title {
+      color: $color-black;
+    }
+
+    &-desc {
+      color: hsla(0, 0%, 7%, .7);
+    }
+  }
+}
+
+@keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

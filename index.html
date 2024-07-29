@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YJG</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/split.min.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="gnb">
+      <ul class="gnb__list">
+        <li><a href="#">YJG</a></li>
+        <li>Home</li>
+        <li>Projects</li>
+        <li>About</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="container">
+    <section class="intro" id="sc1">
+      <div class="sticky">
+        <div class="intro__bg">
+          <video src="./assets/video/intro.mp4" autoplay loop muted></video>
+        </div>
+        <div class="intro__header">
+          <p>
+            <span>Bringing fresh perspectives</span>
+            <span>to web publishing.</span>
+          </p>
+        </div>
+
+        <span class="intro__scroll">
+          SCROLL FOR MORE
+        </span>
+
+        <div class="intro__logo" data-move="y-move">
+          <h1>PUBLISHER</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <div class="sticky">
+        <div class="works__title-wrap">
+          <div class="works__title">
+            <h2>Crafting Engaging <br>
+              Content
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky sticky__work" id="sc2">
+        <div class="works__item work1" data-move="y-move" data-effect="scale">
+          <a href="#">
+            <div class="works__item-img">
+              <img src="./assets/images/urban.png" alt="urban-art">
+            </div>
+
+            <div class="works__info" data-op="fade">
+              <div class="works__info-title">
+                <span>Urbanchic</span>
+              </div>
+              <div class="works__info-desc">
+                <span>GSAP JQUERY CSS</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="works__item work2" data-move="y-move" data-effect="scale">
+          <a href="#">
+            <div class="works__item-img">
+              <img src="./assets/images/apple.png" alt="apple" >
+            </div>
+
+            <div class="works__info" data-op="fade">
+              <div class="works__info-title">Apple</div>
+              <div class="works__info-desc">GSAP JQUERY CSS</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="works__item work3" data-move="y-move" data-effect="scale">
+          <a href="#">
+            <div class="works__item-img">
+              <img src="./assets/images/hyundai.png" alt="hyundai">
+            </div>
+
+            <div class="works__info" data-op="fade">
+              <div class="works__info-title">Hyundai Card</div>
+              <div class="works__info-desc">GSAP JQUERY CSS</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="works__item work4" data-move="y-move" data-effect="scale">
+          <a href="#">
+            <div class="works__item-img">
+              <img src="./assets/images/one24.png" alt="one24">
+            </div>
+
+            <div class="works__info" data-op="fade">
+              <div class="works__info-title">One 24</div>
+              <div class="works__info-desc">GSAP JQUERY SCSS</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="visual">
+      <div class="visual__loop">
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+        <span>2024 PORTFOLIO</span>
+      </div>
+    </div>
+
+    <section class="sub-works">
+      <h2 class="blind">세미 프로젝트</h2>
+      <div class="sub-works__list">
+        <div class="sub-works__item sub-works__item--large">
+          <a href="#">
+            <img src="./assets/images/pilot.png" alt="Pilot" class="sub-works__item-img">
+
+            <div class="sub-works__item-info">
+              <p>GSAP과 ScrollTrigger, TextPlugin을 사용하여 클론코딩한 사이트입니다.</p>
+            </div>
+
+            <div class="sub-works__item-badge">
+              <span class="sub-works__item-badge-item">Pilot</span>
+              <span class="sub-works__item-badge-item">GSAP</span>
+              <span class="sub-works__item-badge-item">반응형</span>
+            </div>
+          </a>
+
+          <a href="https://velog.io/@whdrms6098/Advanced-career-for-pilots-on-a-Global-Scale" target="_blank"
+            class="sub-works__item-link">
+            <svg width="24" height="24" viewBox="0 0 192 192">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z">
+              </path>
+            </svg>
+            <span class="blind">Velog</span>
+          </a>
+        </div>
+
+        <div class="sub-works__item sub-works__item--small">
+          <a href="#">
+            <img src="./assets/images/kream.png" alt="크림" class="sub-works__item-img">
+
+            <div class="sub-works__item-info">
+              <p>JSON을 이용하여 데이터를 바인딩해 클론코딩한 사이트입니다</p>
+            </div>
+
+            <div class="sub-works__item-badge">
+              <span class="sub-works__item-badge-item">Kream</span>
+              <span class="sub-works__item-badge-item">반응형</span>
+              <span class="sub-works__item-badge-item">JSON</span>
+            </div>
+          </a>
+
+          <a href="https://velog.io/@whdrms6098/KREAM-%ED%95%9C%EC%A0%95%ED%8C%90-%EA%B1%B0%EB%9E%98%EC%9D%98-FLEX"
+            target="_blank" class="sub-works__item-link">
+            <svg width="24" height="24" viewBox="0 0 192 192">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z">
+              </path>
+            </svg>
+            <span class="blind">Velog</span>
+          </a>
+        </div>
+
+        <div class="sub-works__item sub-works__item--small">
+          <a href="#">
+            <img src="./assets/images/daejeon.png" alt="대전시청" class="sub-works__item-img">
+
+            <div class="sub-works__item-info">
+              <p>IR, WAI-ARIA 사용으로 웹 접근성에 초점을 맞추고, TAB키로도 이동이 가능한 클론코딩 사이트입니다</p>
+            </div>
+
+            <div class="sub-works__item-badge">
+              <span class="sub-works__item-badge-item">Deejeon</span>
+              <span class="sub-works__item-badge-item">접근성</span>
+              <span class="sub-works__item-badge-item">반응형</span>
+            </div>
+          </a>
+
+          <a href="https://velog.io/@whdrms6098/%EB%8C%80%EC%A0%84%EC%8B%9C%EC%B2%AD" target="_blank"
+            class="sub-works__item-link">
+            <svg width="24" height="24" viewBox="0 0 192 192">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z">
+              </path>
+            </svg>
+            <span class="blind">Velog</span>
+          </a>
+        </div>
+
+        <div class="sub-works__item sub-works__item--large">
+          <a href="#" target="_blank">
+            <img src="./assets/images/enter.png" alt="Enterprise" class="sub-works__item-img">
+
+            <div class="sub-works__item-info">
+              <p>GSAP, ScrollTrigger를 사용하여 클론코딩한 사이트입니다</p>
+            </div>
+
+            <div class="sub-works__item-badge">
+              <span class="sub-works__item-badge-item">Enterprise</span>
+              <span class="sub-works__item-badge-item">GSAP</span>
+              <span class="sub-works__item-badge-item">적응형</span>
+            </div>
+          </a>
+
+          <a href="https://velog.io/@whdrms6098/%EC%97%94%ED%84%B0%ED%94%84%EB%9D%BC%EC%9D%B4%EC%A6%88-%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8"
+            target="_blank" class="sub-works__item-link">
+            <svg width="24" height="24" viewBox="0 0 192 192">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z">
+              </path>
+            </svg>
+            <span class="blind">Velog</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sc3">
+      <h2 class="blind">소개</h2>
+      <div class="about__title">
+        <strong>더 나은 결과를 추구하는</strong>
+      </div>
+
+      <div class="about__desc">
+        <p>안녕하세요, 웹 퍼블리셔 양종근입니다.
+          저는 JS를 활용한 동적인 웹 인터랙션에 열정을 가지고 있으며, 책임감과 성취욕구가 강하여 현재는 패스트캠퍼스의 프론트엔드 관련 강의를 수강하고 있습니다.
+        </p>
+
+        <p>
+          개발 업무는 혼자 이루어지지 않음을 인지하고, 동료와의 의사소통과 협력이 중요한걸 알고 있습니다. 팀 내에서 원활한 협업을 이끌어내고, 다양한 아이디어와 의견을 조율하는 징검다리 역할을 수행하며,
+          모두가 함께 성장할 수 있는 시너지 효과를 내는 웹 퍼블리셔가 되겠습니다.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <h2 class="blind">푸터</h2>
+    <small>©Yang Jong Geun</small>
+    <nav class="gnb">
+      <ul class="gnb__list">
+        <li>©2024</li>
+        <li><a href="mailto:whdrms6098@gmail.com">whdrms6098@gmail.com</a></li>
+        <li><a href="https://velog.io/@whdrms6098/posts" target="_blank">velog</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>
