@@ -180,9 +180,6 @@ body {
 body.white {
   background-color: #EDEAED;
 }
-body.white .works__title {
-  background-color: #EDEAED;
-}
 
 @-webkit-keyframes textLoop {
   0% {
