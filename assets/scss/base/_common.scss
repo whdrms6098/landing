@@ -23,17 +23,6 @@ body.white {
   .works__title {
     background-color: $color-dark-white;
   }
-
-  .works__info {
-
-    &-title {
-      color: $color-black;
-    }
-
-    &-desc {
-      color: hsla(0, 0%, 7%, .7);
-    }
-  }
 }
 
 @keyframes textLoop {
