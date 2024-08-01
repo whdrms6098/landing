@@ -700,15 +700,23 @@ body {
   }
 }
 .sub-works__list .sub-works__item {
-  position: relative;
-  overflow: hidden;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  position: relative;
 }
 .sub-works__list .sub-works__item:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-filter: brightness(0.65);
           filter: brightness(0.65);
+}
+@media (max-width: 850px) {
+  .sub-works__list .sub-works__item {
+    max-height: 399.5px;
+  }
 }
 .sub-works__list .sub-works__item--large {
   grid-column: span 4;

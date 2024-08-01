@@ -325,15 +325,20 @@ body {
     }
 
     .sub-works__item {
-      position: relative;
-      overflow: hidden;
       border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
 
       &:hover {
         img {
           transform: scale(1.05);
           filter: brightness(.65);
         }
+      }
+
+      @include mobile {
+        max-height: 399.5px;
       }
 
       &--large {
